@@ -9,7 +9,7 @@ resource "azurerm_service_plan" "app_service_plan" {
   location            = azurerm_resource_group.rg.location
   resource_group_name = azurerm_resource_group.rg.name
   os_type             = "Linux" # Crucial: We are deploying a Linux container
-  sku_name            = "B1"    # Basic tier, small size (for cost efficiency)
+  sku_name            = "F1"    # Free tier (F1)
 }
 
 # 3. Linux Web App (The Application)
